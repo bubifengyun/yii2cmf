@@ -1,6 +1,6 @@
 <?php
 if (is_file(__DIR__ . '/.env')) {
-    (new \Dotenv\Dotenv(__DIR__))->load();
+    (new \Dotenv\Dotenv(__DIR__))->load($x);
 }
 
 defined('YII_DEBUG') or define('YII_DEBUG', env('YII_DEBUG'));
